@@ -22,12 +22,12 @@
                     <strong>MOP</strong>: <asp:Label ID="_MOPLabel" runat="server" Text='<%# Eval("MOP") %>' />
                 </div>
                 <div class="two-col-right">
-                    <strong><br /></strong>
                     <strong>Creditor AKA</strong>: <asp:Label ID="_AKALabel" runat="server" Text='<%# Eval("AKA") %>' /><br />
                     <strong>Department</strong>: <asp:Label ID="_DepartmentLabel" runat="server" Text='<%# Eval("Department") %>' /><br />
                     <strong>City</strong>: <asp:Label ID="_CityLabel" runat="server" Text='<%# Eval("City") %>' /><br />
                     <strong>State</strong>: <asp:Label ID="_StateLabel" runat="server" Text='<%# Eval("State") %>' /><br />
                     <strong>Default Contact Method</strong>: <asp:Label ID="_DefaultContactMethodLabel" runat="server" Text='<%# Eval("DefaultContactMethodName") %>' /><br />
+                    <br />
                     <strong>Active</strong>: <asp:Checkbox ID="_IsActiveCheckbox" runat="server" Checked='<%# Eval("IsActive") %>' Enabled="false" />
                 </div>
             </div>
