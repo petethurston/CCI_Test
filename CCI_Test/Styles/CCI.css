@@ -1,0 +1,113 @@
+﻿body
+{
+	background: #fff;
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial;
+	font-size: 13px;
+	color: #666;
+}
+
+h2
+{
+	font-size: 1.4em;
+	line-height: 1.8em;
+}
+
+h3
+{
+	font-size: 1.2em;
+	line-height: 2em;
+	margin-bottom: 10px;
+}
+
+#container
+{
+	width: 920px;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 45px;    
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	overflow: hidden;
+}
+
+#header
+{
+	height: 35px;
+	border-bottom: 1px solid lightgrey;
+	background: #fffff3;
+	padding: 0px 15px;
+}
+
+#head-left
+{
+	float: left;
+	width: 49%;
+	color: #f90;
+}
+#header a 
+{
+    color: #f90;
+    text-decoration: none;
+}
+
+#head-right
+{
+	float: right;
+	width: 49%;
+	text-align: right;
+	line-height: 35px;
+}
+
+#content
+{
+	min-height: 700px;
+	margin-top: 15px;
+}
+
+#search-section
+{
+	height: 150px;
+	border-bottom: 1px solid lightgrey;
+	padding: 0px 15px;
+}
+
+#results-section
+{
+	min-height: 450px;
+	padding: 0px 15px;
+	margin-top: 15px;
+	line-height: 1.4em;
+}
+
+#footer /*doesn't work*/
+{
+	width: 920px;
+	bottom: 0;
+	height: 50px;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+.three-col-left 
+{
+	float: left;
+	width: 33%;
+}
+.three-col-center 
+{
+	float: left;
+	width: 34%;
+}
+.three-col-right 
+{
+	float: left;
+	width: 33%;
+}
+
+.one-col-details
+{
+    margin-left: 225px;
+    line-height: 1.8em;
+}

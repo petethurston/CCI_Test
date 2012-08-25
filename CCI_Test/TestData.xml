@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item>
+    <Type>Creditor</Type>
+    <CreditorName>1NATLPRO</CreditorName>
+    <EFXCode>626NB00123</EFXCode>
+    <XPNCode></XPNCode>
+    <TUCCode></TUCCode>
+    <CreditorType>Mortgage</CreditorType>
+    <MOP>1</MOP>
+    <DefaultContactMethod>Fax1</DefaultContactMethod>
+    <Phone>218-628-1088</Phone>
+    <City>Duluth</City>
+    <State>MN</State>
+  </Item>
+</Items>

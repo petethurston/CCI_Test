@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CCI.master.cs" Inherits="CCI_Test.CCI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CoreLogic Credco - CCI</title>
+    <link rel="shortcut icon" href="http://www.credco.com/assets/img/credco-favicon.ico" />
+
+    <link rel="Stylesheet" type="text/css" href="~/Styles/css-reset.css" />
+    <link rel="Stylesheet" type="text/css" href="~/Styles/CCI.css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    
+    
+    <div id="container">
+        <div id="header">
+            <div id="head-left">
+                <h2><a href="Default.aspx">Creditor Contact Information</a></h2>
+            </div>
+            <div id="head-right">
+                <strong>Welcome</strong> <em><asp:Label ID="username" runat="server" /></em> 
+            </div>
+        </div>
+        
+        <div id="content">
+            <asp:ContentPlaceHolder ID="contentPlace" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
