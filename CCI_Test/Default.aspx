@@ -26,7 +26,6 @@
                 onclick="btnSearch_Click" />
             <asp:Button ID="btnNewRecord" runat="server" Text="New Record" />
             <br />
-            <asp:TextBox ID="testing" runat="server" />
         </div>
     </div><!-- /search-section-->
 
