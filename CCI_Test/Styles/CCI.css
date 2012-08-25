@@ -90,6 +90,24 @@ h3
 	border-bottom: 1px solid lightgrey;
 }
 
+.one-col-details
+{
+    margin-left: 225px;
+    line-height: 1.8em;
+}
+
+.two-col-left 
+{
+    float: left;
+    width: 50%;
+}
+
+.two-col-right 
+{
+    float: left;
+    width: 50%;
+}
+
 .three-col-left 
 {
 	float: left;
@@ -106,8 +124,56 @@ h3
 	width: 33%;
 }
 
-.one-col-details
+#details-wrapper 
 {
-    margin-left: 225px;
     line-height: 1.8em;
+    width: 775px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+#details-wrapper h3
+{
+    margin-bottom: 10px;
+    line-height: 1em;
+    border-bottom: 1px dotted;
+}
+
+#details-section-header 
+{
+    height: 200px;
+    margin-top: 15px;
+}
+#details-section-header h3
+{
+    color: #f60;
+}
+
+#details-section-contact-methods 
+{
+    height: 225px;
+    margin-top: 0px;
+}
+
+#details-section-mailing-address
+{
+    height: 155px;
+    margin-top: 0px;
+}
+
+#details-section-fees
+{
+    height: 70px;
+    margin-top: 0px;
+}
+
+#details-section-tips-and-tricks
+{
+    height: 150px;
+    margin-top: 0px;
+}
+
+#details-section-hours
+{
+    height: 200px;
+    margin-top: 0px;
 }

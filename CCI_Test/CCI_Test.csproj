@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreditorDetails.aspx" />
+    <Content Include="ListViewDetails.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -82,6 +83,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDetails.aspx.cs">
+      <DependentUpon>ListViewDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListViewDetails.aspx.designer.cs">
+      <DependentUpon>ListViewDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
