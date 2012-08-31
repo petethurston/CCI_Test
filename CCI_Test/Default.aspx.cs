@@ -34,7 +34,7 @@ namespace CCI_Test
         #region SelectFromGrid
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string url = "ListViewDetails.aspx?Id=" + GridView1.SelectedValue.ToString();
+            string url = "CreditorDetails.aspx?Id=" + GridView1.SelectedValue.ToString();
             Response.Redirect(url);
         }
         #endregion

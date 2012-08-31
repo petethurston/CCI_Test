@@ -57,7 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreditorDetails.aspx" />
+    <Content Include="CreditorDetailsOld.aspx" />
     <Content Include="ListViewDetails.aspx" />
+    <Content Include="Resources\DB Script.sql" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -76,6 +78,13 @@
     </Compile>
     <Compile Include="CreditorDetails.aspx.designer.cs">
       <DependentUpon>CreditorDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreditorDetailsOld.aspx.cs">
+      <DependentUpon>CreditorDetailsOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditorDetailsOld.aspx.designer.cs">
+      <DependentUpon>CreditorDetailsOld.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
