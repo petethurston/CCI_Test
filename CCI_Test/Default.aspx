@@ -24,7 +24,7 @@
         <div style="text-align: center; margin-top: 60px;">
             <asp:Button ID="btnSearch" runat="server" Text="Search" 
                 onclick="btnSearch_Click" />
-            <asp:Button ID="btnNewRecord" runat="server" Text="New Record" />
+            <asp:Button ID="btnNewRecord" runat="server" Text="Create New Record" />
             <br />
         </div>
     </div><!-- /search-section-->
@@ -50,7 +50,7 @@
                 <asp:BoundField DataField="EFXCode" HeaderText="EFX Code" SortExpression="EFXCode" />
                 <asp:BoundField DataField="XPNCode" HeaderText="EFX Code" SortExpression="XPNCode" />
                 <asp:BoundField DataField="TUCCode" HeaderText="TUC Code" SortExpression="TUCCode" />
-                <asp:BoundField DataField="CreateTS" HeaderText="CreateTS" 
+                <asp:BoundField DataField="CreateTS" HeaderText="Created" 
                     SortExpression="CreateTS" />
             </Columns>
             <FooterStyle BackColor="#CCCC99" />

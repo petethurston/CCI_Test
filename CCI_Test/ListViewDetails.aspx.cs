@@ -14,28 +14,31 @@ namespace CCI_Test
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string CreditorId;
-            if (Request.QueryString["Id"] == null)
+            if (!IsPostBack)
             {
-                CreditorId = "1";
+                string CreditorId;
+                if (Request.QueryString["Id"] == null)
+                {
+                    CreditorId = "1";
+                }
+                else
+                {
+                    CreditorId = Request.QueryString[0];
+                }
+                string sql = "EXEC CRD_GetCreditorById " + CreditorId;
+
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = ConfigurationManager.ConnectionStrings["CCIConnectionString"].ConnectionString;
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter sda = new SqlDataAdapter(sql, con);
+
+                con.Open();
+                sda.Fill(dt);
+                lvCreditorDetails.DataSource = dt;
+                lvCreditorDetails.DataBind();
+                con.Close();
             }
-            else
-            {
-                CreditorId = Request.QueryString[0];
-            }
-            string sql = "EXEC CRD_GetCreditorById " + CreditorId;
-
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["CCIConnectionString"].ConnectionString;
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter sda = new SqlDataAdapter(sql, con);
-
-            con.Open();
-            sda.Fill(dt);
-            lvCreditorDetails.DataSource = dt;
-            lvCreditorDetails.DataBind();
-            con.Close();
         }
 
         protected void lvCreditorDetails_ItemEditing(object sender, ListViewEditEventArgs e)
